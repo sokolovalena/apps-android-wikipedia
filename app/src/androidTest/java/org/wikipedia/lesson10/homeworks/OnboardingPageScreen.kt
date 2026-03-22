@@ -45,4 +45,8 @@ object OnboardingPageScreen : UiScreen<OnboardingPageScreen>() {
     val forthPrimaryHeader = UiTextView {
         withText("Data")
     }
+
+    val retryButton = UiButton{
+        withId(this@OnboardingPageScreen.packageName,"view_wiki_error_button")
+    }
 }
