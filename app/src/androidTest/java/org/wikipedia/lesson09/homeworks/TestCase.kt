@@ -10,8 +10,8 @@ import org.junit.Test
 import org.wikipedia.feed.featured.FeaturedArticleCardView
 import org.wikipedia.main.MainActivity
 import org.wikipedia.feed.announcement.AnnouncementCardView
-import org.wikipedia.lesson03.homeworks.OnboardingScreen.skipButton
 import org.wikipedia.lesson09.homeworks.ArticleItem
+import org.wikipedia.lesson18.homeworks.OnboardingScreen.skipButton
 
 // 1 . Нажимает Skip на экране онбординга
 // 2 . Проверяет отображение блока Featured Article экрана Explore
