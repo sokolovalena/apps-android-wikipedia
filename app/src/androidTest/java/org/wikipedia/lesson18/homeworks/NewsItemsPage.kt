@@ -6,8 +6,11 @@ import io.github.kakaocup.kakao.recycler.KRecyclerItem
 import io.github.kakaocup.kakao.text.KTextView
 import org.hamcrest.Matcher
 import org.wikipedia.R
+import org.wikipedia.feed.featured.FeaturedArticleCardView
+import org.wikipedia.lesson18.homeworks.ExploreScreen.items
 import org.wikipedia.lesson18.homeworks.extensions.name
 import org.wikipedia.lesson18.homeworks.extensions.withParent
+import org.wikipedia.lesson21.homewroks.invokeAtIndexAndClass
 
 class NewsItemsPage(matcher: Matcher<View>): KRecyclerItem<NewsItemsPage>(matcher) {
     val image by lazy {
@@ -22,3 +25,14 @@ class NewsItemsPage(matcher: Matcher<View>): KRecyclerItem<NewsItemsPage>(matche
         }
     }
 }
+
+    fun featuredArticle(index: Int, fnc: NewsItemsPage.() -> Unit) {
+        items.invokeAtIndexAndClass(
+            index,
+            1,
+            (index - 1) * 10,
+            FeaturedArticleCardView::class.java,
+            "$index блок Featured article",
+            fnc
+        )
+    }

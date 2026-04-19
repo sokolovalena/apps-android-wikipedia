@@ -2,7 +2,6 @@ package org.wikipedia.lesson19.homeworks
 
 import android.view.View
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import io.github.kakaocup.kakao.check.KCheckBox
 import io.github.kakaocup.kakao.recycler.KRecyclerItem
 import io.github.kakaocup.kakao.recycler.KRecyclerView
 import io.github.kakaocup.kakao.switch.KSwitch
@@ -13,7 +12,7 @@ import org.wikipedia.lesson18.homeworks.NamedScreen
 import org.wikipedia.lesson18.homeworks.extensions.invokeWithText
 import org.wikipedia.lesson18.homeworks.extensions.name
 import org.wikipedia.lesson18.homeworks.extensions.withParent
-
+import org.wikipedia.lesson21.homewroks.invokeAtIndexAndId
 
 
 object SettingScreen: NamedScreen<SettingScreen>() {
@@ -38,7 +37,7 @@ object SettingScreen: NamedScreen<SettingScreen>() {
         }
 
         val switch by lazy {
-            KTextView(matcher) {
+            KSwitch(matcher) {
                 withId(R.id.switchWidget)
             }.name(withParent("Свитч"))
         }
@@ -46,6 +45,17 @@ object SettingScreen: NamedScreen<SettingScreen>() {
 
     fun switchBlock(fnc: ItemWithSwitch.() -> Unit) {
         items.invokeWithText("Download only over Wi-Fi", fnc)
+    }
+
+    fun switchAtIndex(index: Int, fnc: ItemWithSwitch.() -> Unit) {
+        items.invokeAtIndexAndId(
+            index,
+            0,
+            10,
+            R.id.switchWidget,
+            "$index переключатель",
+            fnc
+        )
     }
 
 }
