@@ -1,14 +1,19 @@
 package org.wikipedia.lesson19.homeworks
 
 import android.view.View
+import androidx.test.espresso.matcher.ViewMatchers.withId
+import io.github.kakaocup.kakao.check.KCheckBox
 import io.github.kakaocup.kakao.recycler.KRecyclerItem
 import io.github.kakaocup.kakao.recycler.KRecyclerView
+import io.github.kakaocup.kakao.switch.KSwitch
 import io.github.kakaocup.kakao.text.KTextView
 import org.hamcrest.Matcher
 import org.wikipedia.R
 import org.wikipedia.lesson18.homeworks.NamedScreen
+import org.wikipedia.lesson18.homeworks.extensions.invokeWithText
 import org.wikipedia.lesson18.homeworks.extensions.name
 import org.wikipedia.lesson18.homeworks.extensions.withParent
+
 
 
 object SettingScreen: NamedScreen<SettingScreen>() {
@@ -38,4 +43,9 @@ object SettingScreen: NamedScreen<SettingScreen>() {
             }.name(withParent("Свитч"))
         }
     }
+
+    fun switchBlock(fnc: ItemWithSwitch.() -> Unit) {
+        items.invokeWithText("Download only over Wi-Fi", fnc)
+    }
+
 }
