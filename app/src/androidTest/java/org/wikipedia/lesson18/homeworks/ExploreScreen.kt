@@ -52,4 +52,10 @@ object ExploreScreen : NamedScreen<ExploreScreen>() {
         withId(com.google.android.material.R.id.navigation_bar_item_small_label_view)
         withText(R.string.nav_item_more)
     }.name(withParent("Кнопка More"))
+
+    val closeButton by lazy {
+        KImageView {
+            withId(R.id.closeButton)
+        }.name(withParent(("Кнопка закрыть")))
+    }
 }
