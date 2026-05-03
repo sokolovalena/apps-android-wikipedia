@@ -290,7 +290,9 @@ dependencies {
     debugImplementation(composeBom)
     implementation("org.hamcrest:hamcrest:2.2")
 
-    androidTestImplementation "com.kaspersky.android-components:kaspresso:1.6.0"
+    androidTestImplementation("com.kaspersky.android-components:kaspresso-allure-support:1.6.1")
+    androidTestImplementation "com.kaspersky.android-components:kaspresso:1.6.1"
+    androidTestImplementation "com.kaspersky.android-components:kaspresso-compose-support:1.6.1"
 }
 
 private setSigningConfigKey(config, Properties props) {
