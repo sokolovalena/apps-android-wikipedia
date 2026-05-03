@@ -1,6 +1,7 @@
 package org.wikipedia.lesson19.homeworks
 
 import io.github.kakaocup.kakao.common.actions.BaseActions
+import io.github.kakaocup.kakao.switch.SwitchableActions
 import org.wikipedia.lesson18.homeworks.extensions.getName
 
 class Actions(private val steps: StepDefinitions) : StepsDSL<Actions>() {
@@ -9,5 +10,12 @@ class Actions(private val steps: StepDefinitions) : StepsDSL<Actions>() {
 
     fun click(element: BaseActions) {
         steps.click("Нажимает на '${element.getName()}'", element)
+    }
+
+    fun swipeSwitchLeft(element: SwitchableActions){
+        element.swipeSwitchThumb (SwitchableActions.Direction.LEFT)
+    }
+    fun swipeSwitchRight(element: SwitchableActions){
+        element.swipeSwitchThumb (SwitchableActions.Direction.RIGHT)
     }
 }
