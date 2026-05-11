@@ -1,10 +1,14 @@
 package org.wikipedia.lesson19.homeworks
 
 import com.kaspersky.kaspresso.testcases.core.testcontext.TestContext
+import io.github.kakaocup.compose.node.action.NodeActions
+import io.github.kakaocup.compose.node.assertion.NodeAssertions
 import io.github.kakaocup.kakao.check.CheckableAssertions
 import io.github.kakaocup.kakao.common.actions.BaseActions
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import io.github.kakaocup.kakao.text.TextViewAssertions
+import org.wikipedia.lesson24.homeworks.ext.assertTrimmedTextIsEquals
+import org.wikipedia.lesson24.homeworks.ext.clickIfEnabled
 
 class StepDefinitions(private val testContext: TestContext<*>) {
 
@@ -51,6 +55,18 @@ class StepDefinitions(private val testContext: TestContext<*>) {
     private fun execute(step: String, fnc: () -> Unit) {
         testContext.step(step) {
             fnc()
+        }
+    }
+
+    fun clickIfEnabled(step: String, element: NodeActions) {
+        execute(step) {
+            element.clickIfEnabled()
+        }
+    }
+
+    fun assertTrimmedTextIsEquals(step: String, element: NodeAssertions, expected: String) {
+        execute(step) {
+            element.assertTrimmedTextIsEquals(expected)
         }
     }
 }
