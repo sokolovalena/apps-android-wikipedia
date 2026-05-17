@@ -1,0 +1,51 @@
+2026-05-11 17:59:11.189  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ___________________________________________________________________________
+2026-05-11 17:59:11.251  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Logcat buffer may be dumped from 05-11 17:59:11.189
+2026-05-11 17:59:11.458  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Starting video recording: Video_InterceptorTest.mp4
+2026-05-11 17:59:11.460  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Waiting for 3000 ms
+2026-05-11 17:59:11.520  5040-5790  KASPRESSO               org.wikipedia.alpha                  D  Display resolution: 1080x2209; supported codec resolution: 2048x2048
+2026-05-11 17:59:11.521  5040-5790  KASPRESSO               org.wikipedia.alpha                  D  Starting video recording with resolution 1080x2048
+2026-05-11 17:59:14.474  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  TEST STARTED: InterceptorTest
+2026-05-11 17:59:14.493  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:14.493  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  BEFORE TEST SECTION
+2026-05-11 17:59:14.493  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:14.493  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  BEFORE SECTION STARTED
+2026-05-11 17:59:14.493  5040-5336  TEST_TAG                org.wikipedia.alpha                  I  BEFORE SECTION
+2026-05-11 17:59:14.493  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  BEFORE SECTION FINISHED SUCCESS
+2026-05-11 17:59:14.497  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:14.497  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  TEST SECTION
+2026-05-11 17:59:14.497  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:14.497  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  RUN SECTION STARTED
+2026-05-11 17:59:14.497  5040-5336  TEST_TAG                org.wikipedia.alpha                  I  AFTER SECTION
+2026-05-11 17:59:14.546  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ___________________________________________________________________________
+2026-05-11 17:59:14.548  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  TEST STEP: "1. Нажимает на 'Экран онбординга : Кнопка Skip'" in InterceptorTest
+2026-05-11 17:59:14.606  5040-5040  KASPRESSO               org.wikipedia.alpha                  I  single click on MaterialButton(id=fragment_onboarding_skip_button;text=Skip;)
+2026-05-11 17:59:15.771  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  TEST STEP: "1. Нажимает на 'Экран онбординга : Кнопка Skip'" in InterceptorTest SUCCEED. It took 0 minutes, 1 seconds and 224 millis.
+2026-05-11 17:59:15.771  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ___________________________________________________________________________
+2026-05-11 17:59:15.991  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Screenshot saved to /data/user/0/org.wikipedia.alpha/files/screenshots/org.wikipedia.lesson26.homework.InterceptorTest/goToArticle/InterceptorTest_step_1.png
+2026-05-11 17:59:16.054  5040-5040  KASPRESSO               org.wikipedia.alpha                  I  scroll RecyclerView to: holder with view: (0th view with: ((view is an instance of android.view.ViewGroup and has descendant matching (an instance of android.widget.TextView and view.getText() equals string from resource id: <2131888411>)))) on FeedView(id=feed_view;)
+2026-05-11 17:59:16.351  5040-5040  KASPRESSO               org.wikipedia.alpha                  I  Check (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle) on FeaturedArticleCardView(resource id not found;)
+2026-05-11 17:59:16.369  5040-5040  KASPRESSO               org.wikipedia.alpha                  I  single click on FeaturedArticleCardView(resource id not found;)
+2026-05-11 17:59:18.058  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ___________________________________________________________________________
+2026-05-11 17:59:18.058  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  TEST STEP: "2. Проверяет, что отображается 'Экран статьи : Заголовок'" in InterceptorTest
+2026-05-11 17:59:18.082  5040-5336  KASPRESSO               org.wikipedia.alpha                  E  Failed to interact with view matching: (view.getId() is <2131297508/org.wikipedia.alpha:id/page_web_view>) because of NoMatchingViewException
+2026-05-11 17:59:18.105  5040-5336  KASPRESSO_TEST          org.wikipedia.alpha                  I  Behavior 'Закрывает блок запуска игры' was executed
+2026-05-11 17:59:19.233  5040-5040  KASPRESSO               org.wikipedia.alpha                  I  web action "scroll into view" with result="true" on webview (view.getId() is <2131297508/org.wikipedia.alpha:id/page_web_view>)
+2026-05-11 17:59:19.234  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  TEST STEP: "2. Проверяет, что отображается 'Экран статьи : Заголовок'" in InterceptorTest SUCCEED. It took 0 minutes, 1 seconds and 177 millis.
+2026-05-11 17:59:19.234  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ___________________________________________________________________________
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Screenshot saved to /data/user/0/org.wikipedia.alpha/files/screenshots/org.wikipedia.lesson26.homework.InterceptorTest/goToArticle/InterceptorTest_step_2.png
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  RUN SECTION FINISHED SUCCESS
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  AFTER TEST SECTION
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  AFTER SECTION STARTED
+2026-05-11 17:59:19.415  5040-5336  TEST_TAG                org.wikipedia.alpha                  I  AFTER SECTION
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  AFTER SECTION FINISHED SUCCESS
+2026-05-11 17:59:19.415  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:19.419  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  TEST PASSED
+2026-05-11 17:59:19.419  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ---------------------------------------------------------------------------
+2026-05-11 17:59:19.421  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Dump logcat buffer to /data/user/0/org.wikipedia.alpha/files/logcat/org.wikipedia.lesson26.homework.InterceptorTest/goToArticle/TestLogcat.txt: logcat -b default -d -t "05-11 17:59:11.189" -s "KASPRESSO","KASPRESSO_TEST"
+2026-05-11 17:59:19.499  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Stopping video recording
+2026-05-11 17:59:19.535  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Waiting for 2000 ms
+2026-05-11 17:59:21.566  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  Video saved to /storage/emulated/0/Documents/video/org.wikipedia.lesson26.homework.InterceptorTest/goToArticle/Video_InterceptorTest.mp4
+2026-05-11 17:59:21.566  5040-5336  KASPRESSO               org.wikipedia.alpha                  D  TEST FINISHED: InterceptorTest, success = true
+2026-05-11 17:59:21.566  5040-5336  KASPRESSO               org.wikipedia.alpha                  I  ___________________________________________________________________________
