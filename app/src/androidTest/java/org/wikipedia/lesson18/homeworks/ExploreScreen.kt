@@ -1,6 +1,7 @@
 package org.wikipedia.lesson18.homeworks
 
 import io.github.kakaocup.kakao.common.views.KView
+import io.github.kakaocup.kakao.edit.KEditText
 import io.github.kakaocup.kakao.image.KImageView
 import io.github.kakaocup.kakao.recycler.KRecyclerView
 import io.github.kakaocup.kakao.text.KButton
@@ -58,4 +59,8 @@ object ExploreScreen : NamedScreen<ExploreScreen>() {
             withId(R.id.closeButton)
         }.name(withParent(("Кнопка закрыть")))
     }
+
+    val searchField = KEditText {
+        withText(R.string.search_hint)
+    }.name(withParent("Текст Search Wikipedia"))
 }

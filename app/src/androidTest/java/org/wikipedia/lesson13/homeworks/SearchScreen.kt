@@ -1,6 +1,7 @@
 package org.wikipedia.lesson13.homeworks
 
 import com.kaspersky.components.kautomator.component.text.UiButton
+import com.kaspersky.components.kautomator.component.text.UiTextView
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.edit.KEditText
 import io.github.kakaocup.kakao.text.KTextView
@@ -23,5 +24,9 @@ object SearchScreen : KScreen<SearchScreen>() {
 
     val searchText = KTextView {
         withText("On")
+    }
+
+    val noResultText = UiTextView {
+        containsText("No results")
     }
 }
