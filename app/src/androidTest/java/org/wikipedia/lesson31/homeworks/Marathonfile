@@ -1,0 +1,31 @@
+name: "My tests"
+outputDir: "marathon"
+debug: false
+vendorConfiguration:
+  type: "Android"
+  applicationApk: "app/build/outputs/apk/alpha/debug/app-alpha-debug.apk"
+  testApplicationApk: "app/build/outputs/apk/androidTest/alpha/debug/app-alpha-debug-androidTest.apk"
+  adbInitTimeoutMillis: 120000
+  applicationPmClear: true
+  testApplicationPmClear: true
+  allureConfiguration:
+    enabled: true
+    relativeResultsDirectory: "/Documents/allure-results"
+    pathRoot: "EXTERNAL_STORAGE"
+fileSyncConfiguration:
+  pull:
+    - "/sdcard/Documents/allure-results"
+    - "/sdcard/screenshots"
+    - "/sdcard/Download"
+filteringConfiguration:
+  allowlist:
+    - type: "fully-qualified-class-name"
+      values:
+        - "org.wikipedia.lesson28.homework.SearchArticleTests"
+        - "org.wikipedia.lesson25.homework.AutoCloseBannerTest"
+poolingStrategy:
+  type: "omni"
+shardingStrategy:
+  type: "parallel"
+batchingStrategy:
+  type: "isolate"
